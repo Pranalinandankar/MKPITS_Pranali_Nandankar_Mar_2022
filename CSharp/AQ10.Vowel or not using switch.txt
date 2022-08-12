@@ -1,0 +1,43 @@
+wap to accept character from the user and display whether it is vowel or not.
+do with switch.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ11_Vowel_or_not_using_Switch
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //wap to accept character from the user and display whether it is vowel or not. Using Switch
+            char ch, a, e, i, o, u;
+            Console.WriteLine("Enter Charcter");
+            ch = Convert.ToChar(Console.ReadLine());
+            switch(ch)
+            {
+                case 'a':
+                    Console.WriteLine("Entered Charcter is Vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("Entered Charcter is Vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("Entered Charcter is Vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("Entered Charcter is Vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("Entered Charcter is Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Entered Character is not Vowel");
+                    break;
+            }
+            Console.ReadLine();        }
+    }
+}
