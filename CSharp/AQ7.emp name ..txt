@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ7__Using_if
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //wap to empno, empname , designation calculate and display bonus ie 10000 for manager 5000 for clerk 2000 for peon
+            //do with if 
+            string empname, designation;
+           
+            int bonus = 0;
+            Console.WriteLine("enter empname ");
+            empname = Console.ReadLine();
+            Console.WriteLine("enter designation ");
+            designation = Console.ReadLine();
+
+            if(designation="M")
+            {
+                Console.WriteLine("Bonus For Manager =10000 ");
+            }
+           else if (designation == c)
+            {
+                Console.WriteLine("Bonus For Clark =5000 ");
+            }
+            else (designation == p)
+            {
+                Console.WriteLine("Bonus For Peon =2000 ");
+            }
+            Console.ReadLine();
+        }
+    }
+}
