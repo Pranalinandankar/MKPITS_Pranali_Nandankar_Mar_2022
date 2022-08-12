@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //wap to accept length and breadth and display the area of a rectangle
+            int length, breadth;
+            Console.WriteLine("Enter Length");
+            length = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Breadth");
+            breadth = Convert.ToInt32(Console.ReadLine());
+            int AOR = length * breadth;
+            Console.WriteLine("Area Of Rectangle=" + AOR);
+            Console.ReadLine();
+        }
+    }
+}
