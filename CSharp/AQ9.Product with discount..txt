@@ -1,0 +1,50 @@
+10 wap to accept productname, productrate, quantity
+	calculate totalamount , discount ie 50% if totalamount > 2000
+else discount =10%  of total amount
+Do with if.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ10.Product_name_rate_quantity_with_discount
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //10 wap to accept productname, productrate, quantity
+         //   calculate totalamount, discount ie 50 % if totalamount > 2000
+           // else discount = 10 % of total amount
+
+            string pn;
+            int pr, q, total,dis,Total;
+            Console.WriteLine("Enter Product Name");
+            pn = Console.ReadLine();
+            Console.WriteLine("Enter Product Rate");
+            pr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Quantity");
+            q = Convert.ToInt32(Console.ReadLine());
+            total = pr * q;
+            if (total > 2000)
+            {
+                Console.WriteLine("Discount is 50%");
+                dis = 50 * total / 100;
+                Total = total - dis;
+
+            }
+            else
+            {
+                Console.WriteLine("Discount is 10%");
+                dis = 10 * total / 100;
+                Total = total - dis;
+            }
+           Console.WriteLine("Total Amount=" + total);
+            Console.WriteLine("Total With Discount-" + Total);
+
+            Console.ReadLine();
+        }
+    }
+}
