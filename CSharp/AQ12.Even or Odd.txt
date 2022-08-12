@@ -1,0 +1,26 @@
+ wap to accept a no. and print whether it is even no or oddno.
+
+using System;
+
+namespace AQ13.Even_or_Odd
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1;
+            Console.WriteLine("Enter any number");
+            n1 = Convert.ToInt32(Console.ReadLine());
+
+            if(n1%2==0)
+            {
+                Console.WriteLine("Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
+            Console.ReadLine();
+        }
+    }
+}
