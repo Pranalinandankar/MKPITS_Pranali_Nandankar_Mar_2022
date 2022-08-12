@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ6_Accept_3_no.and_display_smallest_number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1, n2, n3;
+            Console.WriteLine("Enter Number1");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number1");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number1");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            if(n1<n2 && n1<n3)
+            {
+                Console.WriteLine("Number 1 is Smallest");
+            }
+            else if (n2 < n1 && n2 < n3)
+            {
+                Console.WriteLine("Number 2 is Smallest");
+            }
+            else
+            {
+                Console.WriteLine("Number 3 is Smallest");
+            }
+            Console.ReadLine();
+        }
+    }
+}
