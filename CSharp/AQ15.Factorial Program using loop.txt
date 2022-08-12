@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ15.Factorial_Program_Using_Do_While_loop
+{
+    internal class Program
+    {
+      
+            static void Main(string[] args)
+            {
+            // wap to accept a number and print factorial of a number using Do while loop.
+            int num;
+                int fact = 1;
+                Console.WriteLine("enter number");
+                num = Convert.ToInt32(Console.ReadLine());
+                int i = num;
+                do
+
+                {
+                    fact = fact * i;
+                    i--;
+                } while (i > 0);
+                Console.WriteLine("fact = " + fact);
+                Console.ReadLine();
+
+            }
+        }
+    }
+
