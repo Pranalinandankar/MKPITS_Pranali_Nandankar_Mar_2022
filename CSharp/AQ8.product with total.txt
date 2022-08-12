@@ -1,0 +1,29 @@
+wap to accept productname, productrate , quantity
+	display totalamount 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ9.Product_name_quantity_program
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string pn;
+            int pr, q, total;
+            Console.WriteLine("Enter Product Name");
+            pn = Console.ReadLine();
+            Console.WriteLine("Enter Product Rate");
+            pr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Quantity");
+            q = Convert.ToInt32(Console.ReadLine());
+            total = pr * q;
+            Console.WriteLine("Total Amount=" + total);
+            Console.ReadLine();
+        }
+    }
+}
