@@ -1,0 +1,50 @@
+wap to accept character from the user and display whether it is vowel or not.
+do with if .
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ11.Vowel_or_not
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //wap to accept character from the user and display whether it is vowel or not. Using If
+            char ch, a, e, i, o, u;
+            Console.WriteLine("Enter Charcter");
+            ch = Convert.ToChar(Console.ReadLine());
+
+            if (ch == 'a')
+            {
+                Console.WriteLine("Enter Character is Vowel");
+            }
+             else if (ch == 'e')
+                {
+                    Console.WriteLine("Enter Character is Vowel");
+                }
+        
+             else if (ch == 'i')
+                {
+                    Console.WriteLine("Enter Character is Vowel");
+                }
+            else if (ch == 'o')
+            {
+                Console.WriteLine("Enter Character is Vowel");
+            }
+            else if (ch == 'u')
+            {
+                Console.WriteLine("Enter Character is Vowel");
+            }
+            else
+                {
+                    Console.WriteLine("Enter Character is  not Vowel");
+                }
+                Console.ReadLine();
+
+        }
+    }
+}
