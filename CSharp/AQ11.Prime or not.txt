@@ -1,0 +1,40 @@
+ wap to accept a no. and print whether it is prime no or not.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AQ12_Prime_no.or_not
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //- wap to accept a no. and print whether it is primeno or not.
+
+            int n1, i, m = 0,flag=0;
+            Console.WriteLine("Enter any Number");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            m = n1 / 2;
+
+            for (i = 2; i <= m; i++)
+            {
+
+                if (n1 % i == 0)
+                {
+                    Console.WriteLine("Number is Not Prime");
+                    flag = 1;
+                    break;
+                }
+            }
+                if (flag==0)
+                
+                    Console.WriteLine("Number is  Prime");
+            Console.ReadLine();
+
+            }
+           
+        }
+    }
