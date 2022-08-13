@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ3.Check_Whether_num_is_positve_or_not
+{
+    //Write a C# Sharp program to check whether a given number is positive or negative. 
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1;
+            Console.WriteLine("Enter any number:");
+            n1=Convert.ToInt32(Console.ReadLine()); 
+
+            if(n1 >0)
+            {
+                Console.WriteLine("Number is positive");
+            }
+            else
+            {
+                Console.WriteLine("Number is negative");
+            }
+            Console.ReadLine();
+        }
+    }
+}
