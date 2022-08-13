@@ -1,0 +1,42 @@
+.- create a class car having fields make,model and method getcardata and displaycardata
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Class_AQ4.car_details
+{
+    //create a class car having fields make, model and method getcardata and displaycardata
+    class Car
+    {
+        int carmake;
+        int carmodel;
+       
+        public void getcardata()
+        {
+            Console.WriteLine("Enter Car making year:");
+            carmake = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Car Model:");
+            carmodel = Convert.ToInt32(Console.ReadLine());
+        }
+        public void displaycardata()
+        {
+            Console.WriteLine("Making Year of Car: " + carmake);
+            Console.WriteLine("Car model:" + carmodel);
+            Console.ReadLine();
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Car car = new Car();
+            car.getcardata();
+            car.displaycardata();
+            
+        }
+    }
+}
+ 
