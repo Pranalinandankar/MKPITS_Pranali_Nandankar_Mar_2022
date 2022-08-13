@@ -1,0 +1,52 @@
+AQ2.2- create a class customer having fields custno,custname,custaddress,custtelno and methods getcustomerdata and displaycustomerdata
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Class_AQ2.customer_no_name_add_telno
+{
+    internal class Program
+    {
+        class Customer
+        {
+            int cusno;
+            string cusname;
+            string cusadd;
+            int telno;
+ 
+            public void getdata()
+            {
+                Console.WriteLine("Enter Customer No:");
+                cusno = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Customer Name:");
+                cusname = Console.ReadLine();
+                Console.WriteLine("Enter Customer Address:");
+                cusadd = Console.ReadLine();
+                Console.WriteLine("Enter Customer Telephone No.:");
+                telno = Convert.ToInt32(Console.ReadLine());
+ 
+            }
+            public void displaydata()
+            {
+                Console.WriteLine("cusno:" + cusno);
+                Console.WriteLine("cusname:" + cusname);
+                Console.WriteLine("cusadd:" + cusadd);
+                Console.WriteLine("telno:" + telno);
+                Console.ReadLine();
+            }
+        }
+        static void Main(string[] args)
+        {
+            Customer cus = new Customer();
+ 
+            cus.getdata();
+            cus.displaydata();
+ 
+            
+        }
+    }
+}
+ 
