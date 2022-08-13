@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ2.Even_or_Odd_Program
+{
+    //Write a C# Sharp program to check whether a given number is even or odd. 
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1;
+            Console.WriteLine("Enter any number:");
+            n1=Convert.ToInt32(Console.ReadLine()); 
+
+            if(n1%2==0)
+            {
+                Console.WriteLine("Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Number is Odd");
+            }
+            Console.ReadLine();
+        }
+    }
+}
