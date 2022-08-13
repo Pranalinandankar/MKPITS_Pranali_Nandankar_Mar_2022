@@ -1,0 +1,67 @@
+create a class employee having fields empno,empname , designation and salary
+create a constructor with no parameters and create another parameterized constructor with 4 parameters
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Constructor_AQ4.Class_emp_with_4_par
+{
+    //create a class employee having fields empno,empname , designation and salary
+   // create a constructor with no parameters and create another parameterized constructor with 4 parameters
+ 
+    class Employee
+    {
+        int empno;
+        string empname;
+        string designation;
+        float salary;
+ 
+        public Employee()
+        {
+            empno = 1;
+            empname = "Ramesh";
+            designation = "Maneger";
+            salary = 56000;
+        }
+ 
+        public Employee(int empno,string empname,string designation,float salary)
+        {
+            this.empno = empno;
+            this.empname = empname;
+            this.designation = designation;
+            this.salary = salary;
+        }
+        public void display()
+        {
+            Console.WriteLine("Employee N0:" + empno);
+            Console.WriteLine("Employee Name:"+empname);
+            Console.WriteLine("Designation:"+designation);  
+            Console.WriteLine("Salary:"+salary);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee emp1=new Employee();
+            emp1.display();
+            Console.WriteLine("Enter Employee No:");
+            int no=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Employee Name:");
+            string n1 = Console.ReadLine();
+            Console.WriteLine("Enter Designation:");
+            string d1 = Console.ReadLine();
+            Console.WriteLine("Enter Salary:");
+            float s1 = Convert.ToSingle(Console.ReadLine());
+ 
+            Employee emp2=new Employee(no,n1,d1,s1);
+            emp2.display();
+            Console.ReadLine();
+ 
+        }
+    }
+}
+ 
