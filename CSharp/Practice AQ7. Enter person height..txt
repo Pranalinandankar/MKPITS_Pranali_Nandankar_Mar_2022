@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ7.Enter_person_height
+{
+    internal class Program
+    {
+        //Write a C# Sharp program to accept the height of a person in centimeter and categorize the person according to their height. 
+        static void Main(string[] args)
+        {
+            float h;
+
+            Console.WriteLine("height of a person in centimeter :");
+            h=Convert.ToSingle(Console.ReadLine());
+
+            if(h<=152.4f)
+            {
+                Console.WriteLine("The person is Dwarf.");
+            }
+            else
+            {
+                Console.WriteLine("The Person is Tall.");
+            }
+            Console.ReadLine();
+        }
+    }
+}
