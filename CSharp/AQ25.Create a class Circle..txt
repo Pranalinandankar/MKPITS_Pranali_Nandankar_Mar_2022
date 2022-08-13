@@ -1,0 +1,38 @@
+.create a class cirlce having fields radius and method calculatearea and calculatecirc
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Class_AQ6.Cirlce
+{// //create a class cirlce having fields radius and method calculatearea and calculatecirc
+    class Cirlce
+    {
+        float radius;
+        float area;
+        public void calculatearea()
+        {
+            Console.WriteLine("Enter Radius:");
+            radius = Convert.ToSingle(Console.ReadLine());
+            area = radius * 3.14f;
+        }
+        public void calculatecirc()
+        {
+            Console.WriteLine("Area of circle=" + area);
+        }
+    }
+    internal class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            Cirlce circ = new Cirlce();
+            circ.calculatearea();
+            circ.calculatecirc();
+            Console.ReadLine();
+        }
+    }
+}
+ 
