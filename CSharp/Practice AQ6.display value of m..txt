@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ6
+{
+    internal class Program
+    {
+        //Write a C# Sharp program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0. 
+        static void Main(string[] args)
+        {
+            int m;
+            Console.WriteLine("Enter Value of m:");
+            m=Convert.ToInt32(Console.ReadLine());
+           
+            if(m>0)
+            {
+                Console.WriteLine("n=1");
+            }
+            else
+                if(m<=0)
+                {
+                Console.WriteLine("n=-1");
+
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
