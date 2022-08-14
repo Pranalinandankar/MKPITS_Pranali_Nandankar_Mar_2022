@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ14.check_triangle
+{
+    internal class Program
+    {
+        //Write a C# Sharp program to check whether a triangle is Equilateral, Isosceles or Scalene. 
+        static void Main(string[] args)
+        {
+            int side1, side2, side3;
+            Console.WriteLine("Enter side 1:");
+            side1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter side 2:");
+            side2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter side 3:");
+            side3 = Convert.ToInt32(Console.ReadLine());
+
+            if(side1== side2 && side2==side3)
+            {
+                Console.WriteLine("This is an Equilateral Triangle.");
+            }
+            else if(side1==side2 || side2==side3 || side3==side1)
+            {
+                Console.WriteLine("This is an Isosceles Triangle.");
+            }
+            else
+            {
+                Console.WriteLine("This is an Scalene Triangle");
+            }
+            Console.ReadLine();
+        }
+    }
+}
