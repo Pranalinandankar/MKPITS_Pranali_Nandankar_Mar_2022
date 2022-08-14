@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ16.Check_alphabet_is_vowel_or_consonant_
+{
+    internal class Program
+    {
+        //Write a C# Sharp program to check whether an alphabet is a vowel or consonant. 
+        static void Main(string[] args)
+        {
+            char c;
+         
+
+            Console.WriteLine("Enter Alphabet:");
+            c=Convert.ToChar(Console.ReadLine());
+
+            int i = c;
+
+            if(i>=48 && i<=57)
+            {
+                Console.WriteLine("You entered a number , please enter an alphbet.");
+            }
+            else
+            {
+                switch(c)
+                {
+                    case 'a':
+                        Console.WriteLine("The Alphabet is a Vowel.");
+                        break;
+                    case 'e':
+                        Console.WriteLine("The Alphabet is a Vowel.");
+                        break;
+                    case 'i':
+                        Console.WriteLine("The Alphabet is a Vowel.");
+                        break;
+                    case 'o':
+                        Console.WriteLine("The Alphabet is a Vowel.");
+                        break;
+                    case 'u':
+                        Console.WriteLine("The Alphabet is a Vowel.");
+                        break;
+                    default:
+                        Console.WriteLine("The Alphabet is a Consonant.");
+                        break;
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
