@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ17.Profit_or_loss
+{
+    internal class Program
+    {
+        //. Write a C# Sharp program to calculate profit and loss on a transaction. 
+        static void Main(string[] args)
+        {
+            int cprice, sprice, plamt;
+            Console.WriteLine("Enter Cost Price:");
+            cprice=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Selling Price:");
+            sprice = Convert.ToInt32(Console.ReadLine());
+
+            if(sprice >cprice)
+            {
+                plamt = sprice - cprice;
+                Console.WriteLine("You can book your profit amount :{0} ", plamt);
+            }
+            else if(cprice>sprice)
+                {
+                plamt = cprice - sprice;
+                Console.WriteLine("You got loss of amount:{0}",plamt);
+            }
+            else
+            {
+                Console.WriteLine("You are running in no profit no loss condition.");
+            }
+            Console.ReadLine();
+        }
+    }
+}
