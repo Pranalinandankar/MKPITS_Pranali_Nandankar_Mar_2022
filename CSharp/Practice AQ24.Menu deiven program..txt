@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ24.Menu_driven_program
+{
+    internal class Program
+    {
+        //Write a program in C# Sharp which is a Menu-Driven Program to compute the area of the various geometrical shape. 
+        static void Main(string[] args)
+        {
+            int choice, r, l, w, b, h;
+            double area=0;
+            Console.WriteLine("Enter 1 for area of Circle:");
+            Console.WriteLine("Enter 2 for area of Rectangle:");
+            Console.WriteLine("Enter 3 for area of Triangle:");
+            Console.WriteLine("Enter Your Choice:");
+            choice = Convert.ToInt32(Console.ReadLine());
+
+            switch(choice)
+            {
+                case 1 :
+                    Console.WriteLine("Input Radius of the Circle.");
+                    r=Convert.ToInt32(Console.ReadLine());
+                    area = 3.14 * r * r;
+                    break;
+                    case 2 :
+                     Console.WriteLine("Input length and width of the rectangle:");
+                    l= Convert.ToInt32(Console.ReadLine());
+                    w= Convert.ToInt32(Console.ReadLine());
+                        area = l * w;
+                    
+                    break;
+                case 3:
+                    Console.WriteLine("Input the base and hight of the triangle:");
+                    b= Convert.ToInt32(Console.ReadLine());
+                    h= Convert.ToInt32(Console.ReadLine());
+                    area = 5 * b * h;
+                    break;
+            }
+            Console.WriteLine("Area is:{0}",area);
+            Console.ReadLine();
+
+        }
+    }
+}
