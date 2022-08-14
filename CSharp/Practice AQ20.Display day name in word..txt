@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ20.Display__day_name_in_the_word
+{
+    internal class Program
+    {
+        //Write a program in C# Sharp to read any day number in integer and display day name in the word. 
+        static void Main(string[] args)
+        {
+            int dno;
+            Console.WriteLine("Enter  Day Number In Integer: ");
+            dno=Convert.ToInt32(Console.ReadLine());
+
+            if(dno==1)
+            {
+                Console.WriteLine("Monday");
+            }
+            else if (dno == 2)
+            {
+                Console.WriteLine("Tuesday");
+            }
+            else if (dno == 3)
+            {
+                Console.WriteLine("Wednesday");
+            }
+            else if (dno == 4)
+            {
+                Console.WriteLine("Thursday");
+            }
+            else if (dno == 5)
+            {
+                Console.WriteLine("Friday");
+            }
+            else if (dno == 6)
+            {
+                Console.WriteLine("Saturday");
+            }
+            else if (dno == 7)
+            {
+                Console.WriteLine("Sunday");
+            }
+            Console.ReadLine();
+           
+        }
+    }
+}
