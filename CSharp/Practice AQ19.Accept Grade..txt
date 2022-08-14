@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PAQ19.Accept_Grade
+{
+    internal class Program
+    {
+        //. Write a program in C# Sharp to accept a grade and declare the equivalent description : 
+
+
+        static void Main(string[] args)
+        {
+            char c;
+            Console.WriteLine("Enter Grade:");
+            c = Convert.ToChar(Console.ReadLine());
+
+            if(c=='E' || c=='e')
+            {
+                Console.WriteLine("Excellent");
+            }
+           else if (c == 'V' || c=='v')
+            {
+                Console.WriteLine("Very Good");
+            }
+           else if (c == 'G' || c=='g')
+            {
+                Console.WriteLine("Good");
+            }
+           else if (c == 'A'|| c=='a')
+            {
+                Console.WriteLine("Average");
+            }
+          else  if (c == 'F' || c=='f')
+            {
+                Console.WriteLine("Fail");
+            }
+            Console.ReadLine();
+           
+        }
+    }
+}
