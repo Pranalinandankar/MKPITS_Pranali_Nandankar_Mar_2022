@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Accessing_base_class_field_ex
+{
+    internal class Program
+    {
+        public class Animal
+        {
+            public string Color = "White";
+        }
+        public class Dog : Animal
+        {
+            string color = "black";
+            public void showColor()
+            {
+                Console.WriteLine(base.Color);
+                Console.WriteLine(color);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Dog d = new Dog();
+            d.showColor();
+            Console.ReadLine();
+        }
+    }
+}
