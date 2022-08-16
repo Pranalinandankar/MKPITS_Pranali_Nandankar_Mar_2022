@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Runtime_poly_with_data_member
+{
+    internal class Program
+    {
+        public class Animal
+        {
+            public string color = "White";
+
+        }
+        public class Dog : Animal
+        {
+            public string color = "Black";
+        }
+        static void Main(string[] args)
+        {
+            Animal a = new Dog();
+            Console.WriteLine(a.color);
+            Console.ReadLine();
+        }
+    }
+}
