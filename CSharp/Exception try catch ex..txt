@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exception_Handing_ex
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            int n;
+            Console.WriteLine("Enter number1");
+            num=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter number2");
+            n=Convert.ToInt32(Console.ReadLine());
+            int res = 0;
+            try
+            {
+                res = num / n;//error will come here and program terminates        
+            }
+            catch (Exception ee)
+            {
+                Console.WriteLine("Cannot divide by Zero");
+            }
+            Console.WriteLine("res=" + res);
+            Console.WriteLine("bye");
+            Console.ReadLine();
+            
+        }
+    }
+}
