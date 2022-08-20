@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Seald_ex
+{
+    internal class Program
+    {
+        sealed class Student
+        {
+
+        }
+        class parttimestudent: Student //// error since student is declared sealed 
+        { }
+        static void Main(string[] args)
+        {
+        }
+    }
+}
