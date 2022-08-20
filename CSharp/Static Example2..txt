@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Static_hello_ex
+{
+    internal class Student
+    {
+        public static void display()
+        {
+            Console.WriteLine("Hello");
+        }
+        public void sayhi()
+        {
+            Console.WriteLine("hi");
+        }
+    
+        static void Main(string[] args)
+        {
+
+        Student.display();
+        //    student.sayhi();// error
+        Student s = new Student();
+        s.sayhi();
+
+
+        Console.ReadLine();
+        }
+    }
+}
