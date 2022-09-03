@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add program</title>
+</head>
+<body>
+    enter a:<input type="text" id="t1">
+    enter b:<input type="text" id="t2">
+    <br><br>
+    <input type="button" value="result" onclick="add();"/>
+    <br>
+    <span id="res"></span>
+    
+</body>
+<script>
+    function add()
+    {
+        var a=parseInt(document.getElementById("t1").value);
+        var b=parseInt(document.getElementById("t2").value);
+        var res=a+b;
+        alert("Addition of two numbers="+res);
+    }
+    add();
+</script>
+</html>
