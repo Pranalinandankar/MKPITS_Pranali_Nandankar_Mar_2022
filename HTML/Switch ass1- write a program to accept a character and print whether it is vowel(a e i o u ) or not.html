@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function display()
+            {
+                var ch=document.getElementById("t1").value;
+                var res=document.getElementById("r1").value;
+                switch(ch)
+                {
+                    case 'a':
+                       
+                    case 'e':
+
+                    case 'i':
+                        
+                    case 'o':
+                        
+                    case 'u':
+                          
+                    document.getElementById("r1").innerHTML="It is vowel";
+                    break;
+                    default:
+                    document.getElementById("r1").innerHTML="Not an vowel";
+                    break;
+                }
+               // document.getElementById("r1").innerHTML=result;
+            }
+        </script>
+    </head>
+   <body>
+    <form>
+        enter any character:<input type="text" id="t1" />
+        <br>
+        <br>
+        <input type="button" value="result" onclick="display();"/>
+        <br>
+        result:<span id="r1"></span>
+    </form>
+   </body>
+</html>
