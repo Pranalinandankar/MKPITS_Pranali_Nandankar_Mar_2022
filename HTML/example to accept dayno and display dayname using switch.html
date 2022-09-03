@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>
+            function display()
+            {
+var result=document.getElementById("r1").value;
+var dayno=parseInt(document.getElementById ("n1").value);
+
+switch(dayno)
+{
+    case 1:
+        result="monday";
+        break;
+
+    case 2:
+        result="Tuesday";
+        break;
+        
+    case 3:
+        result="Wednesday";
+        break;
+        
+    case 4:
+        result="Thursday";
+        break;
+
+    case 5:
+        result="Friday";
+        break; 
+        
+    case 6:
+        result="Saturday";
+        break;   
+        
+    case 7:
+        result="Sunday";
+        break;
+
+    default:
+        result="invalid day no";
+        break;    
+}
+document.getElementById("r1").innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            enter day no:<input type="text" id="n1" name="n1"/>
+            <br><br>
+            <input type="button" value="Ok" onclick="display();"/>
+            <br>
+            <br>
+            result:<span id="r1" name="res"></span>
+        </form>
+    </body>
+</html>
